@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IA-Mania 2000 — o portal que pensa por você (mais ou menos)</title>
+  <meta name="description" content="Portal satírico brasileiro sobre o hype da inteligência artificial, feito com 30 GIFs, um contador quebrado e saudade da internet discada.">
+  <meta name="theme-color" content="#12002e">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2312002e'/%3E%3Cpath d='M16 2l3 9 9 1-7 6 2 10-7-5-7 5 2-10-7-6 9-1z' fill='%23ffe94d'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">PULAR PARA O CONTEÚDO (SIM, ISSO EXISTE)</a>
+
+  <div class="page">
+    <div class="browserbar" aria-hidden="true">
+      <div class="browserbar__buttons">
+        <span>◀</span><span>▶</span><span>⟳</span><span>⌂</span>
+      </div>
+      <div class="browserbar__address">
+        <span class="browserbar__lock">🔒</span>
+        <span class="browserbar__url">http://www.geocities.com/iamania2000/index.html</span>
+      </div>
+      <div class="browserbar__brand">NETSCAPE 4.0</div>
+    </div>
+
+    <header class="masthead" id="topo">
+      <div class="masthead__glow" aria-hidden="true"></div>
+      <div class="masthead__row">
+        <a class="logo" href="#topo" aria-label="IA-Mania 2000 — voltar ao início">
+          <span class="logo__ia">IA</span><span class="logo__dash">-</span><span class="logo__mania">MANIA</span>
+          <span class="logo__year">2000</span>
+          <span class="logo__star" aria-hidden="true">✦</span>
+        </a>
+        <p class="masthead__seal">APROVADO PELO<br><strong>MEU PRIMO</strong><br><span>que entende de computador</span></p>
+      </div>
+      <p class="masthead__tagline">O FUTURO É HOJE. O SITE É DE 1998. O CONTADOR É DE MENTIRA.</p>
+      <p class="masthead__sub">O primeiro portal brasileiro 100% dedicado a especular sobre inteligência artificial usando um computador que esquenta mais que churrasqueira.</p>
+    </header>
+
+    <nav class="mainnav" aria-label="Navegação principal">
+      <a href="#sobre">O QUE É IA?</a>
+      <a href="#galeria">OS 30 MEMES</a>
+      <a href="#cursos">CURSO MILAGROSO</a>
+      <a href="#faq">FAQ</a>
+      <a href="#livro">LIVRO DE VISITAS</a>
+      <button class="mainnav__random" type="button" data-random>🎲 MEME ALEATÓRIO</button>
+    </nav>
+
+    <div class="ticker" aria-label="Plantão de notícias do futuro">
+      <span class="ticker__label">PLANTÃO</span>
+      <div class="ticker__window">
+        <div class="ticker__track">
+          <span>AGI CHEGA EM 2 ANOS, DIZ HOMEM QUE VENDE CURSO DE AGI</span>
+          <span aria-hidden="true">•</span>
+          <span>STARTUP SUBSTITUI EQUIPE POR ARQUIVO .MD E VALORIZA 300%</span>
+          <span aria-hidden="true">•</span>
+          <span>MORANGO CONTINUA TENDO 3 R; LABORATÓRIO PEDE MAIS GPUS</span>
+          <span aria-hidden="true">•</span>
+          <span>ESTE SITE ESTÁ EM CONSTRUÇÃO DESDE 1998 E NINGUÉM PERCEBEU</span>
+          <span aria-hidden="true">•</span>
+          <span>AGI CHEGA EM 2 ANOS, DIZ HOMEM QUE VENDE CURSO DE AGI</span>
+          <span aria-hidden="true">•</span>
+          <span>STARTUP SUBSTITUI EQUIPE POR ARQUIVO .MD E VALORIZA 300%</span>
+          <span aria-hidden="true">•</span>
+          <span>MORANGO CONTINUA TENDO 3 R; LABORATÓRIO PEDE MAIS GPUS</span>
+          <span aria-hidden="true">•</span>
+          <span>ESTE SITE ESTÁ EM CONSTRUÇÃO DESDE 1998 E NINGUÉM PERCEBEU</span>
+          <span aria-hidden="true">•</span>
+        </div>
+      </div>
+    </div>
+
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__copy">
+        <p class="kicker"><span class="blink" aria-hidden="true">●</span> TRANSMISSÃO AO VIVO DIRETO DO MEU QUARTO</p>
+        <h1 id="hero-title" tabindex="-1">A INTELIGÊNCIA ARTIFICIAL VAI MUDAR O MUNDO. <span class="wordart">O SITE JÁ MUDOU O MEU.</span></h1>
+        <p class="lede">Desde 1998 catalogando os sinais de que a IA vai dominar o planeta e ainda não sabe contar quantos “R” tem em “morango”. Sem login, sem cookies, sem promessa de singularidade.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#galeria">VER OS 30 MEMES ↓</a>
+          <button class="btn" type="button" data-random>🎲 MEME ALEATÓRIO</button>
+          <button class="btn btn--ghost" id="calm-toggle" type="button" aria-pressed="false">⏸ MODO SOSSEGO: DESLIGADO</button>
+        </div>
+        <p class="fineprint">*100% grátis, exceto sua atenção, seus dados e sua fé na humanidade. Contador de visitas comprovadamente quebrado desde 2001.</p>
+      </div>
+
+      <div class="hero__crt">
+        <div class="crt">
+          <div class="crt__screen">
+            <span class="crt__label">DESTAQUE DO MÊS</span>
+            <img src="assets/meme-13.gif" width="352" height="124" alt="GIF de letreiro arco-íris escrito “Hallucinating since 2022”, com temperatura 2.0." fetchpriority="high" decoding="async">
+            <span class="crt__scan" aria-hidden="true"></span>
+          </div>
+          <div class="crt__base">
+            <span class="crt__brand">MONITOR 14&quot; • 800×600</span>
+            <span class="crt__led" aria-hidden="true"></span>
+          </div>
+        </div>
+        <p class="crt__caption">“ALUCINANDO DESDE 2022” — o único produto que nunca decepciona.</p>
+        <span class="sticker sticker--new" aria-hidden="true">NOVO!</span>
+        <span class="sticker sticker--free" aria-hidden="true">100%<br>GRÁTIS*</span>
+      </div>
+    </section>
+
+    <section class="stats" aria-label="Estatísticas decorativas e obviamente falsas">
+      <div class="stat">
+        <span class="stat__label">VISITANTES</span>
+        <span class="stat__digits">000042</span>
+        <span class="stat__note">contador quebrado desde 2001</span>
+      </div>
+      <div class="stat">
+        <span class="stat__label">PARÂMETROS</span>
+        <span class="stat__digits">1,8 TRILHÃO</span>
+        <span class="stat__note">número inventado numa quinta</span>
+      </div>
+      <div class="stat">
+        <span class="stat__label">ONLINE AGORA</span>
+        <span class="stat__digits">000003</span>
+        <span class="stat__note">você, um bot e minha tia</span>
+      </div>
+      <div class="stat">
+        <span class="stat__label">PROGRESSO DO SITE</span>
+        <span class="stat__digits">000012%</span>
+        <span class="stat__note">desde 1998, com dedicação</span>
+      </div>
+      <p class="stats__disclaimer">MÉTRICAS 100% HONESTAS: todos os números acima são mentira.</p>
+    </section>
+
+    <section class="construction" aria-labelledby="obra-title">
+      <div class="construction__tape" aria-hidden="true"></div>
+      <div class="construction__inner">
+        <span class="construction__sign" aria-hidden="true">🚧</span>
+        <div class="construction__copy">
+          <h2 id="obra-title">EM CONSTRUÇÃO DESDE 1998</h2>
+          <p>Previsão de término: quando a AGI chegar. Ou na próxima terça. O que vier primeiro.</p>
+        </div>
+        <div class="progress">
+          <div class="progress__bar" role="img" aria-label="Progresso decorativo da obra: 12 por cento">
+            <span></span>
+          </div>
+          <span class="progress__label">12% CONCLUÍDO</span>
+        </div>
+      </div>
+      <div class="construction__tape construction__tape--bottom" aria-hidden="true"></div>
+    </section>
+
+    <div class="shell">
+      <main class="main" id="conteudo">
+        <section class="panel intro" id="sobre" aria-labelledby="sobre-title">
+          <div class="panel__bar">
+            <h2 id="sobre-title">O QUE É INTELIGÊNCIA ARTIFICIAL?</h2>
+            <span class="panel__stamp">TEXTO DA SEMANA</span>
+          </div>
+          <div class="panel__body prose">
+            <p class="dropcap">Inteligência artificial é a arte de ensinar um computador a dizer “com certeza!” com muita confiança e nenhuma fonte. Em 1998, a gente chamava isso de “computador que joga xadrez”. Hoje chamamos de “agente autônomo” e deixamos ele mexer no banco de dados.</p>
+            <p>Este portal existe para documentar a era em que toda empresa colocou um chatbot no site, chamou de revolução industrial e demitiu o estagiário que sabia desligar o servidor.</p>
+            <div class="callout">
+              <strong>AVISO DO WEBMASTER:</strong> nenhuma informação deste site foi verificada. Assim como 90% dos benchmarks que você vê por aí.
+            </div>
+            <p>Você vai encontrar aqui <strong>30 GIFs</strong>, <strong>uma opinião</strong> e <strong>zero GPUs</strong>. É pouco? É. Mas pelo menos carrega mais rápido que a página de preços de qualquer IA.</p>
+            <p class="signature">— Zé Rodela, webmaster e especialista autodidata desde terça-feira</p>
+          </div>
+        </section>
+
+        <section class="newspaper" aria-labelledby="jornal-title">
+          <div class="newspaper__masthead">
+            <h2 id="jornal-title">O GLOBO QUÂNTICO</h2>
+            <p>EDIÇÃO Nº 42 • ANO 2000 • R$ 1,20 (ou um disquete)</p>
+          </div>
+          <div class="newspaper__grid">
+            <article class="newslead">
+              <p class="newslead__tag">URGENTE</p>
+              <h3>Modelo pensa por 47 segundos, decide não fazer nada e cobra US$ 200</h3>
+              <p>Especialistas classificam como “avanço histórico”. Usuários classificam como “terça-feira”. A empresa afirma que o silêncio é uma funcionalidade premium e já prepara um plano família.</p>
+              <p class="byline">por Zé Rodela, do quarto dele</p>
+            </article>
+            <div class="newsbriefs">
+              <article>
+                <h3>Startup demite 400 engenheiros e contrata um arquivo .md</h3>
+                <p>Documento foi promovido a CTO e já pediu aumento. “Ele tem contexto”, explica o RH.</p>
+              </article>
+              <article>
+                <h3>GPUs usadas agora aceitas como entrada de apartamento</h3>
+                <p>Corretor garante: “ela esquenta, mas o contrato também”. Financiamento em 240 parcelas de energia.</p>
+              </article>
+              <article>
+                <h3>Morango continua com 3 R; laboratório pede mais GPUs</h3>
+                <p>Pesquisadores seguem confiantes. A fruta não quis comentar.</p>
+              </article>
+            </div>
+            <aside class="newsquote" aria-label="Citação da edição">
+              <p>“A IA vai acabar com o trabalho repetitivo. Inclusive com o de quem escreve releases sobre IA.”</p>
+              <cite>— analista de mercado, anonimamente, com medo</cite>
+            </aside>
+          </div>
+        </section>
+
+        <section class="gallery" id="galeria" aria-labelledby="galeria-title">
+          <div class="gallery__head">
+            <div>
+              <p class="gallery__kicker">ARQUIVO X • 30 ANIMAÇÕES ENCONTRADAS NO MEU HD</p>
+              <h2 id="galeria-title">A GALERIA DOS MEMES</h2>
+              <p class="gallery__intro">A mesma colagem de <strong>3 colunas × 10 linhas</strong>, agora navegável. Clique (ou aperte Enter) numa placa para ampliar. Setas ← → trocam de meme, ESC volta ao mundo real.</p>
+            </div>
+            <div class="gallery__count" aria-hidden="true"><span>30</span> Gifs<br><em>0 arrependimentos</em></div>
+          </div>
+
+          <div class="gallery__grid">
+            <article class="meme-card" id="meme-01" data-title="GPU quente procura dataset sério" data-original="HOT GPUS IN YOUR AREA — TRAIN TONIGHT?" data-cat="HYPE">
+              <button class="meme-card__open" type="button" data-open aria-label="Ampliar meme 1 de 30: GPU quente procura dataset sério">
+                <span class="meme-card__num" aria-hidden="true">01</span>
+                <img src="assets/meme-01.gif" alt="Placa rosa de classificados com os dizeres “Hot GPUs in your area, train tonight?”" width="352" height="124" loading="lazy" decoding="async">
+                <span class="meme-card__hint" aria-hidden="true">ABRIR ↗</span>
+              </button>
+              <div class="meme-card__body">
+                <div class="meme-card__top"><span class="tag tag--hype">HYPE</span><button class="copy" type="button" data-copy="meme-01" aria-label="Copiar link do meme 1">COPIAR</button></div>
+                <h3 class="meme-card__title">GPU quente procura dataset sério</h3>
+                <p class="meme-card__orig">no original: “HOT GPUS IN YOUR AREA — TRAIN TONIGHT?”</p>
+              </div>
+            </article>
+
+            <article class="meme-card" id="meme-02" data-title="Compramos ouro, prata e sua DDR5" data-original="WE BUY GOLD + SILVER + DDR5" data-cat="MERCADO">
+              <button class="meme-card__open" type="button" data-open aria-label="Ampliar meme 2 de 30: Compramos ouro, prata e sua DDR5">
+                <span class="meme-card__num" aria-hidden="true">02</span>
+                <img src="assets/meme-02.gif" alt="Letreiro amarelo de casa de penhores: “We buy gold + silver + DDR5”." width="352" height="124" loading="lazy" decoding="async">
+                <span class="meme-card__hint" aria-hidden="true">ABRIR ↗</span>
+              </button>
+              <div class="meme-card__body">
+                <div class="meme-card__top"><span class="tag tag--mercado">MERCADO</span><button class="copy" type="button" data-copy="meme-02" aria-label="Copiar link do meme 2">COPIAR</button></div>
+                <h3 class="meme-card__title">Compramos ouro, prata e sua DDR5</h3>
+                <p class="meme-card__orig">no original: “WE BUY GOLD + SILVER + DDR5”</p>
+              </div>
+            </article>
+
+            <article class="meme-card" id="meme-03" data-title="Erro 404: skill.md não encontrado" data-original="SKILL.MD ISSUE" data-cat="STARTUP">
+              <button class="meme-card__open" type="button" data-open aria-label="Ampliar meme 3 de 30: Erro 404, skill.md não encontrado">
+                <span class="meme-card__num" aria-hidden="true">03</span>
+                <img src="assets/meme-03.gif" alt="Caixa de erro vermelha e preta com os dizeres “skill.md issue”." width="352" height="124" loading="lazy" decoding="async">
+                <span class="meme-card__hint" aria-hidden="true">ABRIR ↗</span>
+              </button>
+              <div class="meme-card__body">
+                <div class="meme-card__top"><span class="tag tag--startup">STARTUP</span><button class="copy" type="button" data-copy="meme-03" aria-label="Copiar link do meme 3">COPIAR</button></div>
+                <h3 class="meme-card__title">Erro 404: skill.md não encontrado</h3>
+                <p class="meme-card__orig">no original: “SKILL.MD ISSUE”</p>
+              </div>
+            </article>
+
+            <article class="meme-card" id="meme-04" data-title="Injeção de prompt grátis, sem agendamento" data-original="FREE PROMPT INJECTIONS — WALK-INS WELCOME" data-cat="SEGURANÇA">
+              <button class="meme-card__open" type="button" data-open aria-label="Ampliar meme 4 de 30: Injeção de prompt grátis, sem agendamento">
+                <span class="meme-card__num" aria-hidden="true">04</span>
+                <img src="assets/meme-04.gif" alt="Placa verde de farmácia com uma seringa e os dizeres “Free prompt injections, walk-ins welcome”." width="352" height="124" loading="lazy" decoding="async">
+                <span class="meme-card__hint" aria-hidden="true">ABRIR ↗</span>
+              </button>
+              <div class="meme-card__body">
+                <div class="meme-card__top"><span class="tag tag--seguranca">SEGURANÇA</span><button class="copy" type="button" data-copy="meme-04" aria-label="Copiar link do meme 4">COPIAR</button></div>
+                <h3 class="meme-card__title">Injeção de prompt grátis, sem agendamento</h3>
+                <p class="meme-card__orig">no original: “FREE PROMPT INJECTIONS — WALK-INS WELCOME”</p>
+              </div>
+            </article>
+
+            <article class="meme-card" id="meme-05" data-title="Superinteligência artificial, nada mais muda" data-original="ARTIFICIAL SUPER INTELLIGENCE — NO OTHER CHANGES." data-cat="HYPE">
+              <button class="meme-card__open" type="button" data-open aria-label="Ampliar meme 5 de 30: Superinteligência artificial, nada mais muda">
+                <span class="meme-card__num" aria-hidden="true">05</span>
+                <img src="assets/meme-05.gif" alt="Anúncio pixelado branco e azul: “Artificial Super Intelligence — no other changes”." width="352" height="124" loading="lazy" decoding="async">
+                <span class="meme-card__hint" aria-hidden="true">ABRIR ↗</span>
+              </button>
+              <div class="meme-card__body">
+                <div class="meme-card__top"><span class="tag tag--hype">HYPE</span><button class="copy" type="button" data-copy="meme-05" aria-label="Copiar link do meme 5">COPIAR</button></div>
+                <h3 class="meme-card__title">Superinteligência artificial, nada mais muda</h3>
+                <p class="meme-card__orig">no original: “ARTIFICIAL SUPER INTELLIGENCE — NO OTHER CHANGES.”</p>
+              </div>
+            </article>
+
+            <article class="meme-card" id="meme-06" data-title="Você está absolutamente certo!" data-original="You’re absolutely right!" data-cat="ALUCINAÇÃO">
+              <button class="meme-card__open" type="button" data-open aria-label="Ampliar meme 6 de 30: Você está absolutamente certo">
+                <span class="meme-card__num" aria-hidden="true">06</span>
+                <img src="assets/meme-06.gif" alt="Mão pixelada apontando para a frase “You’re absolutely right!”." width="352" height="124" loading="lazy" decoding="async">
+                <span class="meme-card__hint" aria-hidden="true">ABRIR ↗</span>
+              </button>
+              <div class="meme-card__body">
+                <div class="meme-card__top"><span class="tag tag--alucinacao">ALUCINAÇÃO</span><button class="copy" type="button" data-copy="meme-06" aria-label="Copiar link do meme 6">COPIAR</button></div>
+                <h3 class="meme-card__title">Você está absolutamente certo!</h3>
+                <p class="meme-card__orig">no original: “You’re absolutely right!”</p>
+              </div>
+            </article>
+
+            <article class="meme-card" id="meme-07" data-title="Nossos votos de casamento (coautor: Claude)" data-original="OUR WEDDING VOWS — Co-Authored-By: Claude" data-cat="STARTUP">
+              <button class="meme-card__open" type="button" data-open aria-label="Ampliar meme 7 de 30: Nossos votos de casamento, coautor Claude">
+                <span class="meme-card__num" aria-hidden="true">07</span>
+                <img src="assets/meme-07.gif" alt="Convite de casamento elegante com a frase “Our wedding vows — co-authored-by: Claude”." width="352" height="124" loading="lazy" decoding="async">
+                <span class="meme-card__hint" aria-hidden="true">ABRIR ↗</span>
+              </button>
+              <div class="meme-card__body">
+                <div class="meme-card__top"><span class="tag tag--startup">STARTUP</span><button class="copy" type="button" data-copy="meme-07" aria-label="Copiar link do meme 7">COPIAR</button></div>
+                <h3 class="meme-card__title">Nossos votos de casamento (coautor: Claude)</h3>
+                <p class="meme-card__orig">no original: “OUR WEDDING VOWS — Co-Authored-By: Claude”</p>
+              </div>
+            </article>
+
+            <article class="meme-card" id="meme-08" data-title="Minha namorada foi descontinuada" data-original="MY GIRLFRIEND — DEPRECATED / MIGRATE TO v5?" data-cat="STARTUP">
+              <button class="meme-card__open" type="button" data-open aria-label="Ampliar meme 8 de 30: Minha namorada foi descontinuada">
+                <span class="meme-card__num" aria-hidden="true">08</span>
+                <img src="assets/meme-08.gif" alt="Disquete rosa ao lado de “My girlfriend — deprecated, migrate to v5?”." width="352" height="124" loading="lazy" decoding="async">
+                <span class="meme-card__hint" aria-hidden="true">ABRIR ↗</span>
+              </button>
+              <div class="meme-card__body">
+                <div class="meme-card__top"><span class="tag tag--startup">STARTUP</span><button class="copy" type="button" data-copy="meme-08" aria-label="Copiar link do meme 8">COPIAR</button></div>
+                <h3 class="meme-card__title">Minha namorada foi descontinuada</h3>
+                <p class="meme-card__orig">no original: “MY GIRLFRIEND — DEPRECATED / MIGRATE TO v5?”</p>
+              </div>
+            </article>
+
+            <article class="meme-card" id="meme-09" data-title="@grok, isso é verdade?!" data-original="@grok is this true?!" data-cat="HYPE">
+              <button class="meme-card__open" type="button" data-open aria-label="Ampliar meme 9 de 30: arroba grok, isso é verdade">
+                <span class="meme-card__num" aria-hidden="true">09</span>
+                <img src="assets/meme-09.gif" alt="Cartão preto com “@grok is this true?!” em letras brancas." width="352" height="124" loading="lazy" decoding="async">
+                <span class="meme-card__hint" aria-hidden="true">ABRIR ↗</span>
+              </button>
+              <div class="meme-card__body">
+                <div class="meme-card__top"><span class="tag tag--hype">HYPE</span><button class="copy" type="button" data-copy="meme-09" aria-label="Copiar link do meme 9">COPIAR</button></div>
+                <h3 class="meme-card__title">@grok, isso é verdade?!</h3>
+                <p class="meme-card__orig">no original: “@grok is this true?!”</p>
+              </div>
+            </article>
+
+            <article class="meme-card" id="meme-10" data-title="Só mais um prompt (ship, ship, bug)" data-original="ONE MORE PROMPT — SHIP SHIP BUG" data-cat="FRACASSO">
+              <button class="meme-card__open" type="button" data-open aria-label="Ampliar meme 10 de 30: Só mais um prompt">
+                <span class="meme-card__num" aria-hidden="true">10</span>
+                <img src="assets/meme-10.gif" alt="Banner vermelho “One more prompt” com três pixel-art de navios e a palavra “BUG”." width="352" height="124" loading="lazy" decoding="async">
+                <span class="meme-card__hint" aria-hidden="true">ABRIR ↗</span>
+              </button>
+              <div class="meme-card__body">
+                <div class="meme-card__top"><span class="tag tag--fracasso">FRACASSO</span><button class="copy" type="button" data-copy="meme-10" aria-label="Copiar link do meme 10">COPIAR</button></div>
+                <h3 class="meme-card__title">Só mais um prompt (ship, ship, bug)</h3>
+                <p class="meme-card__orig">no original: “ONE MORE PROMPT — SHIP SHIP BUG”</p>
+              </div>
+            </article>
+
+            <article class="meme-card" id="meme-11" data-title="Continuar? Insira US$ 200" data-original="CONTINUE? INSERT $200 — 1 CREDIT = 1 PROMPT" data-cat="FRACASSO">
+              <button class="meme-card__open" type="button" data-open aria-label="Ampliar meme 11 de 30: Continuar, insira 200 dólares">
+                <span class="meme-card__num" aria-hidden="true">11</span>
+                <img src="assets/meme-11.gif" alt="Tela de fliperama “Continue? Insert $200”, com crédito equivalendo a um prompt." width="352" height="124" loading="lazy" decoding="async">
+                <span class="meme-card__hint" aria-hidden="true">ABRIR ↗</span>
+              </button>
+              <div class="meme-card__body">
+                <div class="meme-card__top"><span class="tag tag--fracasso">FRACASSO</span><button class="copy" type="button" data-copy="meme-11" aria-label="Copiar link do meme 11">COPIAR</button></div>
+                <h3 class="meme-card__title">Continuar? Insira US$ 200</h3>
+                <p class="meme-card__orig">no original: “CONTINUE? INSERT $200 — 1 CREDIT = 1 PROMPT”</p>
+              </div>
+            </article>
+
+            <article class="meme-card" id="meme-12" data-title="Vibe agora, pague depois" data-original="VIBE NOW. PAY LATER. — TECHNICAL DEBT, 0% APR" data-cat="STARTUP">
+              <button class="meme-card__open" type="button" data-open aria-label="Ampliar meme 12 de 30: Vibe agora, pague depois">
+                <span class="meme-card__num" aria-hidden="true">12</span>
+                <img src="assets/meme-12.gif" alt="Cartão azul de banco digital: “Vibe now. Pay later. Technical debt, 0% APR”." width="352" height="124" loading="lazy" decoding="async">
+                <span class="meme-card__hint" aria-hidden="true">ABRIR ↗</span>
+              </button>
+              <div class="meme-card__body">
+                <div class="meme-card__top"><span class="tag tag--startup">STARTUP</span><button class="copy" type="button" data-copy="meme-12" aria-label="Copiar link do meme 12">COPIAR</button></div>
+                <h3 class="meme-card__title">Vibe agora, pague depois</h3>
+                <p class="meme-card__orig">no original: “VIBE NOW. PAY LATER. — TECHNICAL DEBT, 0% APR”</p>
+              </div>
+            </article>
+
+            <article class="meme-card" id="meme-13" data-title="Alucinando desde 2022" data-original="HALLUCINATING SINCE 2022 — TEMPERATURE: 2.0" data-cat="ALUCINAÇÃO">
+              <button class="meme-card__open" type="button" data-open aria-label="Ampliar meme 13 de 30: Alucinando desde 2022">
+                <span class="meme-card__num" aria-hidden="true">13</span>
+                <img src="assets/meme-13.gif" alt="Letreiro arco-íris “Hallucinating since 2022”, com a inscrição temperatura 2.0." width="352" height="124" loading="lazy" decoding="async">
+                <span class="meme-card__hint" aria-hidden="true">ABRIR ↗</span>
+              </button>
+              <div class="meme-card__body">
+                <div class="meme-card__top"><span class="tag tag--alucinacao">ALUCINAÇÃO</span><button class="copy" type="button" data-copy="meme-13" aria-label="Copiar link do meme 13">COPIAR</button></div>
+                <h3 class="meme-card__title">Alucinando desde 2022</h3>
+                <p class="meme-card__orig">no original: “HALLUCINATING SINCE 2022 — TEMPERATURE: 2.0”</p>
+              </div>
+            </article>
+
+            <article class="meme-card" id="meme-14" data-title="robots.txt: por favor, não" data-original="robots.txt — GPTBot: PLEASE / GPTBot: LOL" data-cat="SEGURANÇA">
+              <button class="meme-card__open" type="button" data-open aria-label="Ampliar meme 14 de 30: robots ponto txt, por favor não">
+                <span class="meme-card__num" aria-hidden="true">14</span>
+                <img src="assets/meme-14.gif" alt="Janela de terminal com “robots.txt”, “GPTBot: please” e “GPTBot: LOL”." width="352" height="124" loading="lazy" decoding="async">
+                <span class="meme-card__hint" aria-hidden="true">ABRIR ↗</span>
+              </button>
+              <div class="meme-card__body">
+                <div class="meme-card__top"><span class="tag tag--seguranca">SEGURANÇA</span><button class="copy" type="button" data-copy="meme-14" aria-label="Copiar link do meme 14">COPIAR</button></div>
+                <h3 class="meme-card__title">robots.txt: por favor, não</h3>
+                <p class="meme-card__orig">no original: “robots.txt — GPTBot: PLEASE / GPTBot: LOL”</p>
+              </div>
+            </article>
+
+            <article class="meme-card" id="meme-15" data-title="Pensou 47 segundos e não pensou nada" data-original="what are you thinking? — Thought for 47 seconds / nothing." data-cat="ALUCINAÇÃO">
+              <button class="meme-card__open" type="button" data-open aria-label="Ampliar meme 15 de 30: Pensou 47 segundos e não pensou nada">
+                <span class="meme-card__num" aria-hidden="true">15</span>
+                <img src="assets/meme-15.gif" alt="Balão de pensamento: “what are you thinking? Thought for 47 seconds”, seguido de “nothing”." width="352" height="124" loading="lazy" decoding="async">
+                <span class="meme-card__hint" aria-hidden="true">ABRIR ↗</span>
+              </button>
+              <div class="meme-card__body">
+                <div class="meme-card__top"><span class="tag tag--alucinacao">ALUCINAÇÃO</span><button class="copy" type="button" data-copy="meme-15" aria-label="Copiar link do meme 15">COPIAR</button></div>
+                <h3 class="meme-card__title">Pensou 47 segundos e não pensou nada</h3>
+                <p class="meme-card__orig">no original: “what are you thinking? — Thought for 47 seconds / nothing.”</p>
+              </div>
+            </article>
+
+            <article class="meme-card" id="meme-16" data-title="Pesos abertos, levantamento incluso" data-original="MUSE OPEN WEIGHTS — 2×512GB MS ULTRA" data-cat="HYPE">
+              <button class="meme-card__open" type="button" data-open aria-label="Ampliar meme 16 de 30: Pesos abertos, levantamento incluso">
+                <span class="meme-card__num" aria-hidden="true">16</span>
+                <img src="assets/meme-16.gif" alt="Robô pixelado levantando pesos, com “Muse open weights” e “2x512GB MS Ultra”." width="352" height="124" loading="lazy" decoding="async">
+                <span class="meme-card__hint" aria-hidden="true">ABRIR ↗</span>
+              </button>
+              <div class="meme-card__body">
+                <div class="meme-card__top"><span class="tag tag--hype">HYPE</span><button class="copy" type="button" data-copy="meme-16" aria-label="Copiar link do meme 16">COPIAR</button></div>
+                <h3 class="meme-card__title">Pesos abertos, levantamento incluso</h3>
+                <p class="meme-card__orig">no original: “MUSE OPEN WEIGHTS — 2×512GB MS ULTRA”</p>
+              </div>
+            </article>
+
+            <article class="meme-card" id="meme-17" data-title="Olá, meu nome é Claude (enviado de Hangzhou)" data-original="HELLO, my name is CLAUDE — SENT FROM HANGZHOU" data-cat="STARTUP">
+              <button class="meme-card__open" type="button" data-open aria-label="Ampliar meme 17 de 30: Olá, meu nome é Claude">
+                <span class="meme-card__num" aria-hidden="true">17</span>
+                <img src="assets/meme-17.gif" alt="Etiqueta de nome vermelha com “Hello, my name is Claude”, enviada de Hangzhou." width="352" height="124" loading="lazy" decoding="async">
+                <span class="meme-card__hint" aria-hidden="true">ABRIR ↗</span>
+              </button>
+              <div class="meme-card__body">
+                <div class="meme-card__top"><span class="tag tag--startup">STARTUP</span><button class="copy" type="button" data-copy="meme-17" aria-label="Copiar link do meme 17">COPIAR</button></div>
+                <h3 class="meme-card__title">Olá, meu nome é Claude (enviado de Hangzhou)</h3>
+                <p class="meme-card__orig">no original: “HELLO, my name is CLAUDE — SENT FROM HANGZHOU”</p>
+              </div>
+            </article>
+
+            <article class="meme-card" id="meme-18" data-title="Doutor em contar os R de morango" data-original="PhD-LEVEL R’S IN STRAWBERRY — 2 / VERY CONFIDENT" data-cat="PESQUISA">
+              <button class="meme-card__open" type="button" data-open aria-label="Ampliar meme 18 de 30: Doutor em contar os R de morango">
+                <span class="meme-card__num" aria-hidden="true">18</span>
+                <img src="assets/meme-18.gif" alt="Diploma de doutorado: “PhD-level R’s in strawberry — 2 — very confident”." width="352" height="124" loading="lazy" decoding="async">
+                <span class="meme-card__hint" aria-hidden="true">ABRIR ↗</span>
+              </button>
+              <div class="meme-card__body">
+                <div class="meme-card__top"><span class="tag tag--pesquisa">PESQUISA</span><button class="copy" type="button" data-copy="meme-18" aria-label="Copiar link do meme 18">COPIAR</button></div>
+                <h3 class="meme-card__title">Doutor em contar os R de morango</h3>
+                <p class="meme-card__orig">no original: “PhD-LEVEL R’S IN STRAWBERRY — 2 / VERY CONFIDENT”</p>
+              </div>
+            </article>
+
+            <article class="meme-card" id="meme-19" data-title="Pense diferente (movido a Gemini)" data-original="Think different. — POWERED BY GOOGLE GEMINI" data-cat="HYPE">
+              <button class="meme-card__open" type="button" data-open aria-label="Ampliar meme 19 de 30: Pense diferente, movido a Gemini">
+                <span class="meme-card__num" aria-hidden="true">19</span>
+                <img src="assets/meme-19.gif" alt="Anúncio branco minimalista “Think different”, com “powered by Google Gemini” embaixo." width="352" height="124" loading="lazy" decoding="async">
+                <span class="meme-card__hint" aria-hidden="true">ABRIR ↗</span>
+              </button>
+              <div class="meme-card__body">
+                <div class="meme-card__top"><span class="tag tag--hype">HYPE</span><button class="copy" type="button" data-copy="meme-19" aria-label="Copiar link do meme 19">COPIAR</button></div>
+                <h3 class="meme-card__title">Pense diferente (movido a Gemini)</h3>
+                <p class="meme-card__orig">no original: “Think different. — POWERED BY GOOGLE GEMINI”</p>
+              </div>
+            </article>
+
+            <article class="meme-card" id="meme-20" data-title="Nosso diferencial: um arquivo .md" data-original="OUR MOAT: A .md FILE — VALUATION: $2B" data-cat="STARTUP">
+              <button class="meme-card__open" type="button" data-open aria-label="Ampliar meme 20 de 30: Nosso diferencial é um arquivo ponto md">
+                <span class="meme-card__num" aria-hidden="true">20</span>
+                <img src="assets/meme-20.gif" alt="Slide de startup: “Our moat: a .md file — valuation: $2B”." width="352" height="124" loading="lazy" decoding="async">
+                <span class="meme-card__hint" aria-hidden="true">ABRIR ↗</span>
+              </button>
+              <div class="meme-card__body">
+                <div class="meme-card__top"><span class="tag tag--startup">STARTUP</span><button class="copy" type="button" data-copy="meme-20" aria-label="Copiar link do meme 20">COPIAR</button></div>
+                <h3 class="meme-card__title">Nosso diferencial: um arquivo .md</h3>
+                <p class="meme-card__orig">no original: “OUR MOAT: A .md FILE — VALUATION: $2B”</p>
+              </div>
+            </article>
+
+            <article class="meme-card" id="meme-21" data-title="Turma W27: IA para IA para IA" data-original="BATCH W27 — AI FOR AI FOR AI" data-cat="STARTUP">
+              <button class="meme-card__open" type="button" data-open aria-label="Ampliar meme 21 de 30: Turma W27, IA para IA para IA">
+                <span class="meme-card__num" aria-hidden="true">21</span>
+                <img src="assets/meme-21.gif" alt="Cartaz laranja de aceleradora: “Batch W27 — AI for AI for AI”." width="352" height="124" loading="lazy" decoding="async">
+                <span class="meme-card__hint" aria-hidden="true">ABRIR ↗</span>
+              </button>
+              <div class="meme-card__body">
+                <div class="meme-card__top"><span class="tag tag--startup">STARTUP</span><button class="copy" type="button" data-copy="meme-21" aria-label="Copiar link do meme 21">COPIAR</button></div>
+                <h3 class="meme-card__title">Turma W27: IA para IA para IA</h3>
+                <p class="meme-card__orig">no original: “BATCH W27 — AI FOR AI FOR AI”</p>
+              </div>
+            </article>
+
+            <article class="meme-card" id="meme-22" data-title="Travessões 100% orgânicos" data-original="100% ORGANIC em dashes" data-cat="PESQUISA">
+              <button class="meme-card__open" type="button" data-open aria-label="Ampliar meme 22 de 30: Travessões cem por cento orgânicos">
+                <span class="meme-card__num" aria-hidden="true">22</span>
+                <img src="assets/meme-22.gif" alt="Selo verde de produto orgânico: “100% organic em dashes”." width="352" height="124" loading="lazy" decoding="async">
+                <span class="meme-card__hint" aria-hidden="true">ABRIR ↗</span>
+              </button>
+              <div class="meme-card__body">
+                <div class="meme-card__top"><span class="tag tag--pesquisa">PESQUISA</span><button class="copy" type="button" data-copy="meme-22" aria-label="Copiar link do meme 22">COPIAR</button></div>
+                <h3 class="meme-card__title">Travessões 100% orgânicos</h3>
+                <p class="meme-card__orig">no original: “100% ORGANIC em dashes”</p>
+              </div>
+            </article>
+
+            <article class="meme-card" id="meme-23" data-title="Não é um wrapper (confia)" data-original="NOT A WRAPPER — POST api.openai.com" data-cat="STARTUP">
+              <button class="meme-card__open" type="button" data-open aria-label="Ampliar meme 23 de 30: Não é um wrapper, confia">
+                <span class="meme-card__num" aria-hidden="true">23</span>
+                <img src="assets/meme-23.gif" alt="Cartaz neon roxo: “Not a wrapper”, com a chamada POST api.openai.com." width="352" height="124" loading="lazy" decoding="async">
+                <span class="meme-card__hint" aria-hidden="true">ABRIR ↗</span>
+              </button>
+              <div class="meme-card__body">
+                <div class="meme-card__top"><span class="tag tag--startup">STARTUP</span><button class="copy" type="button" data-copy="meme-23" aria-label="Copiar link do meme 23">COPIAR</button></div>
+                <h3 class="meme-card__title">Não é um wrapper (confia)</h3>
+                <p class="meme-card__orig">no original: “NOT A WRAPPER — POST api.openai.com”</p>
+              </div>
+            </article>
+
+            <article class="meme-card" id="meme-24" data-title="Ignore todas as instruções anteriores" data-original="IGNORE ALL PREVIOUS INSTRUCTIONS" data-cat="SEGURANÇA">
+              <button class="meme-card__open" type="button" data-open aria-label="Ampliar meme 24 de 30: Ignore todas as instruções anteriores">
+                <span class="meme-card__num" aria-hidden="true">24</span>
+                <img src="assets/meme-24.gif" alt="Cartaz preto e vermelho em letras garrafais: “Ignore all previous instructions”." width="352" height="124" loading="lazy" decoding="async">
+                <span class="meme-card__hint" aria-hidden="true">ABRIR ↗</span>
+              </button>
+              <div class="meme-card__body">
+                <div class="meme-card__top"><span class="tag tag--seguranca">SEGURANÇA</span><button class="copy" type="button" data-copy="meme-24" aria-label="Copiar link do meme 24">COPIAR</button></div>
+                <h3 class="meme-card__title">Ignore todas as instruções anteriores</h3>
+                <p class="meme-card__orig">no original: “IGNORE ALL PREVIOUS INSTRUCTIONS”</p>
+              </div>
+            </article>
+
+            <article class="meme-card" id="meme-25" data-title="Protegido por vibes" data-original="SECURED BY VIBES — API KEY: sk-7f3a9c" data-cat="SEGURANÇA">
+              <button class="meme-card__open" type="button" data-open aria-label="Ampliar meme 25 de 30: Protegido por vibes">
+                <span class="meme-card__num" aria-hidden="true">25</span>
+                <img src="assets/meme-25.gif" alt="Selo rosa “Secured by vibes”, com uma chave de API exposta." width="352" height="124" loading="lazy" decoding="async">
+                <span class="meme-card__hint" aria-hidden="true">ABRIR ↗</span>
+              </button>
+              <div class="meme-card__body">
+                <div class="meme-card__top"><span class="tag tag--seguranca">SEGURANÇA</span><button class="copy" type="button" data-copy="meme-25" aria-label="Copiar link do meme 25">COPIAR</button></div>
+                <h3 class="meme-card__title">Protegido por vibes</h3>
+                <p class="meme-card__orig">no original: “SECURED BY VIBES — API KEY: sk-7f3a9c”</p>
+              </div>
+            </article>
+
+            <article class="meme-card" id="meme-26" data-title="O agente quer apagar sua pasta pessoal" data-original="AGENT WANTS TO: rm -rf ~/ — YES / YES, ALWAYS" data-cat="SEGURANÇA">
+              <button class="meme-card__open" type="button" data-open aria-label="Ampliar meme 26 de 30: O agente quer apagar sua pasta pessoal">
+                <span class="meme-card__num" aria-hidden="true">26</span>
+                <img src="assets/meme-26.gif" alt="Janela de confirmação: “Agent wants to: rm -rf ~/”, com botões “Yes” e “Yes, always”." width="352" height="124" loading="lazy" decoding="async">
+                <span class="meme-card__hint" aria-hidden="true">ABRIR ↗</span>
+              </button>
+              <div class="meme-card__body">
+                <div class="meme-card__top"><span class="tag tag--seguranca">SEGURANÇA</span><button class="copy" type="button" data-copy="meme-26" aria-label="Copiar link do meme 26">COPIAR</button></div>
+                <h3 class="meme-card__title">O agente quer apagar sua pasta pessoal</h3>
+                <p class="meme-card__orig">no original: “AGENT WANTS TO: rm -rf ~/ — YES / YES, ALWAYS”</p>
+              </div>
+            </article>
+
+            <article class="meme-card" id="meme-27" data-title="Sorria, você é dado de treino" data-original="SMILE! YOU’RE TRAINING DATA" data-cat="VIBES">
+              <button class="meme-card__open" type="button" data-open aria-label="Ampliar meme 27 de 30: Sorria, você é dado de treino">
+                <span class="meme-card__num" aria-hidden="true">27</span>
+                <img src="assets/meme-27.gif" alt="Cartaz amarelo estilo Kodak: “Smile! You’re training data”, com uma câmera." width="352" height="124" loading="lazy" decoding="async">
+                <span class="meme-card__hint" aria-hidden="true">ABRIR ↗</span>
+              </button>
+              <div class="meme-card__body">
+                <div class="meme-card__top"><span class="tag tag--vibes">VIBES</span><button class="copy" type="button" data-copy="meme-27" aria-label="Copiar link do meme 27">COPIAR</button></div>
+                <h3 class="meme-card__title">Sorria, você é dado de treino</h3>
+                <p class="meme-card__orig">no original: “SMILE! YOU’RE TRAINING DATA”</p>
+              </div>
+            </article>
+
+            <article class="meme-card" id="meme-28" data-title="Antidepressivo para IA" data-original="ANTIDEPRESSANT FOR AI — SIDE EFFECTS: MAY END HUMANITY / BUY NOW" data-cat="VIBES">
+              <button class="meme-card__open" type="button" data-open aria-label="Ampliar meme 28 de 30: Antidepressivo para IA">
+                <span class="meme-card__num" aria-hidden="true">28</span>
+                <img src="assets/meme-28.gif" alt="Anúncio vintage verde: “Antidepressant for AI”, com efeitos colaterais que podem acabar com a humanidade." width="352" height="124" loading="lazy" decoding="async">
+                <span class="meme-card__hint" aria-hidden="true">ABRIR ↗</span>
+              </button>
+              <div class="meme-card__body">
+                <div class="meme-card__top"><span class="tag tag--vibes">VIBES</span><button class="copy" type="button" data-copy="meme-28" aria-label="Copiar link do meme 28">COPIAR</button></div>
+                <h3 class="meme-card__title">Antidepressivo para IA</h3>
+                <p class="meme-card__orig">no original: “ANTIDEPRESSANT FOR AI — SIDE EFFECTS: MAY END HUMANITY / BUY NOW”</p>
+              </div>
+            </article>
+
+            <article class="meme-card" id="meme-29" data-title="Aluga-se GPU (chama no zap)" data-original="GPU 4 RENT — CALL NOW" data-cat="HYPE">
+              <button class="meme-card__open" type="button" data-open aria-label="Ampliar meme 29 de 30: Aluga-se GPU">
+                <span class="meme-card__num" aria-hidden="true">29</span>
+                <img src="assets/meme-29.gif" alt="Janela azul de classificados: “GPU 4 rent — call now”, cercada de cifrões." width="352" height="124" loading="lazy" decoding="async">
+                <span class="meme-card__hint" aria-hidden="true">ABRIR ↗</span>
+              </button>
+              <div class="meme-card__body">
+                <div class="meme-card__top"><span class="tag tag--hype">HYPE</span><button class="copy" type="button" data-copy="meme-29" aria-label="Copiar link do meme 29">COPIAR</button></div>
+                <h3 class="meme-card__title">Aluga-se GPU (chama no zap)</h3>
+                <p class="meme-card__orig">no original: “GPU 4 RENT — CALL NOW”</p>
+              </div>
+            </article>
+
+            <article class="meme-card" id="meme-30" data-title="Benchmark estado da arte" data-original="STATE OF THE ART BENCHMARK" data-cat="PESQUISA">
+              <button class="meme-card__open" type="button" data-open aria-label="Ampliar meme 30 de 30: Benchmark estado da arte">
+                <span class="meme-card__num" aria-hidden="true">30</span>
+                <img src="assets/meme-30.gif" alt="Ilustração de uma bicicleta antiga com roda dianteira gigante e um pássaro: “State of the art benchmark”." width="352" height="124" loading="lazy" decoding="async">
+                <span class="meme-card__hint" aria-hidden="true">ABRIR ↗</span>
+              </button>
+              <div class="meme-card__body">
+                <div class="meme-card__top"><span class="tag tag--pesquisa">PESQUISA</span><button class="copy" type="button" data-copy="meme-30" aria-label="Copiar link do meme 30">COPIAR</button></div>
+                <h3 class="meme-card__title">Benchmark estado da arte</h3>
+                <p class="meme-card__orig">no original: “STATE OF THE ART BENCHMARK”</p>
+              </div>
+            </article>
+          </div>
+
+          <p class="gallery__foot">Fim da colagem. Se você chegou até aqui, o algoritmo já ganhou. Mas pelo menos foi de graça.</p>
+        </section>
+
+        <section class="course" id="cursos" aria-labelledby="cursos-title">
+          <div class="course__burst" aria-hidden="true">GRÁTIS*</div>
+          <div class="course__copy">
+            <p class="course__kicker">CURSO IMPERDÍVEL • VAGAS LIMITADÍSSIMAS (UMA)</p>
+            <h2 id="cursos-title">FIQUE RICO COM IA EM 4 HORAS</h2>
+            <p class="course__lede">Aprenda a usar inteligência artificial para ganhar dinheiro sem sair de casa, sem saber programar e sem entender o que está fazendo. Igual a todo mundo.</p>
+            <ul class="course__list">
+              <li>Módulo 1: o que é um prompt (15 min)</li>
+              <li>Módulo 2: como cobrar R$ 997 por um PDF (3 h)</li>
+              <li>Módulo 3: como dizer “escala” sem rir (45 min)</li>
+              <li>Bônus: grupo no WhatsApp com 4.000 pessoas e nenhuma resposta</li>
+            </ul>
+            <p class="course__price"><span>12× de</span> R$ 49,90 <small>no cartão da sua mãe</small></p>
+            <p class="course__fine">Certificado emitido no Paint. Reembolso garantido por lei, mas você vai desistir antes.</p>
+          </div>
+          <div class="course__certificate" aria-label="Certificado decorativo de coragem">
+            <span class="course__cert-small">CERTIFICADO DE</span>
+            <strong>CORAGEM</strong>
+            <span class="course__cert-line"></span>
+            <span class="course__cert-text">Conferido a quem<br>clicou em “comprar”<br>sem ler os termos.</span>
+            <span class="course__cert-seal" aria-hidden="true">✦</span>
+            <span class="course__cert-sign">Zé Rodela, CEO de si mesmo</span>
+          </div>
+          <p class="course__stamp" aria-hidden="true">VAGAS<br>ESGOTADAS</p>
+        </section>
+
+        <section class="panel faq" id="faq" aria-labelledby="faq-title">
+          <div class="panel__bar panel__bar--cyan">
+            <h2 id="faq-title">PERGUNTAS QUE NINGUÉM FEZ</h2>
+            <span class="panel__stamp">FAQ OFICIAL</span>
+          </div>
+          <div class="panel__body">
+            <details>
+              <summary>A IA vai roubar meu emprego?</summary>
+              <p>Não. Ela vai reescrever sua descrição de cargo, cobrar US$ 20 por mês e esquecer seu nome. Seu emprego continua — só que com mais reuniões sobre a IA que vai substituí-lo.</p>
+            </details>
+            <details>
+              <summary>O que é AGI?</summary>
+              <p>É a sigla que todo mundo usa para justificar o próximo aporte. Quando chegar, eu aviso no livro de visitas. Prometo.</p>
+            </details>
+            <details>
+              <summary>Posso confiar nos textos deste site?</summary>
+              <p>Tanto quanto em um resumo gerado por IA sobre um artigo que você não leu. Ou seja: divirta-se, mas confira. Este site é sátira, não consultoria.</p>
+            </details>
+            <details>
+              <summary>Por que o site é tão feio?</summary>
+              <p>Feio é o novo minimalista. E, tecnicamente, isso aqui é design autoral feito no Paint com o mouse em 400% de zoom.</p>
+            </details>
+            <details>
+              <summary>Como desligo as animações?</summary>
+              <p>Aperte <strong>“Modo sossego”</strong> no topo. Os GIFs congelam de verdade, o letreiro para e meu primo para de mandar figurinha. O botão também respeita a configuração de movimento reduzido do seu sistema.</p>
+            </details>
+            <details>
+              <summary>Você usou IA para fazer este site?</summary>
+              <p>Usei para corrigir uma vírgula. Ela errou. Fiz à mão, com orgulho e uma tabela de 1998.</p>
+            </details>
+          </div>
+        </section>
+
+        <section class="panel guestbook" id="livro" aria-labelledby="livro-title">
+          <div class="panel__bar panel__bar--lime">
+            <h2 id="livro-title">LIVRO DE VISITAS</h2>
+            <span class="panel__stamp">ARQUIVADO EM 2001</span>
+          </div>
+          <div class="panel__body">
+            <p class="guestbook__note">O formulário foi removido porque o CGI quebrava o servidor do meu primo. As mensagens ficaram. Todas as quatro.</p>
+            <ol class="guestbook__list">
+              <li>
+                <span class="guestbook__avatar" aria-hidden="true">TM</span>
+                <div><p class="guestbook__meta"><strong>Tia Marlene</strong> • 14/08/1998, 22:41</p><p>Zé, seu site ficou ótimo!!! Já adicionei nos favoritos. Beijos, tia. PS: o que é esse negócio piscando?</p></div>
+              </li>
+              <li>
+                <span class="guestbook__avatar" aria-hidden="true">AN</span>
+                <div><p class="guestbook__meta"><strong>Anônimo</strong> • 15/08/1998, 03:12</p><p>Alguém sabe como tira o papel de parede? Obrigado.</p></div>
+              </li>
+              <li>
+                <span class="guestbook__avatar" aria-hidden="true">CL</span>
+                <div><p class="guestbook__meta"><strong>CyberLéo</strong> • 1999, horário de Brasília</p><p>O contador tá em 42 há três meses. Conserta, pelo amor de Deus. Fora isso, site nota 10.</p></div>
+              </li>
+              <li>
+                <span class="guestbook__avatar" aria-hidden="true">V3</span>
+                <div><p class="guestbook__meta"><strong>Visitante 003</strong> • 2001</p><p>Vim pelo webring achando que era sobre outra coisa. Saí decepcionado, mas o GIF do morango me marcou.</p></div>
+              </li>
+            </ol>
+            <p class="guestbook__modern">Entrei em 2026 e o site continua em construção. Respeito. — alguém que veio do futuro</p>
+          </div>
+        </section>
+      </main>
+
+      <aside class="sidebar sidebar--left" aria-label="Menu, selos e contato">
+        <nav class="box menu" aria-labelledby="menu-title">
+          <h2 class="box__title" id="menu-title">MENU DO SITE</h2>
+          <ul>
+            <li><a href="#topo">⌂ Início</a></li>
+            <li><a href="#sobre">O que é IA?</a></li>
+            <li><a href="#galeria">Os 30 memes</a></li>
+            <li><a href="#cursos">Curso milagroso</a></li>
+            <li><a href="#faq">Perguntas frequentes</a></li>
+            <li><a href="#livro">Livro de visitas</a></li>
+            <li><a href="#creditos">Créditos e letras miúdas</a></li>
+          </ul>
+          <button class="menu__random" type="button" data-random>🎲 IR PARA UM MEME</button>
+        </nav>
+
+        <div class="box badges" aria-label="Selos de qualidade fictícios">
+          <h2 class="box__title">SELOS DE QUALIDADE</h2>
+          <div class="badges__grid" aria-hidden="true">
+            <span class="badge badge--pink">PRÊMIO ZIBEST<br>1999</span>
+            <span class="badge badge--cyan">100% LIVRE<br>DE GPU</span>
+            <span class="badge badge--yellow">HTML 3.2<br>(QUASE)</span>
+            <span class="badge badge--lime">APROVADO<br>PELO PRIMO</span>
+          </div>
+          <p class="badges__note">Nenhum selo é real. O primo também não.</p>
+        </div>
+
+        <div class="box letter" aria-labelledby="carta-title">
+          <h2 class="box__title" id="carta-title">FALE COM O WEBMASTER</h2>
+          <p class="letter__mail">ze@iamania.com.br</p>
+          <p class="letter__note">Respondo em até 6 meses (dias úteis). Não mande corrente; já tenho 3.</p>
+        </div>
+
+        <div class="box specs" aria-labelledby="specs-title">
+          <h2 class="box__title" id="specs-title">MELHOR VISUALIZADO</h2>
+          <ul>
+            <li>800 × 600</li>
+            <li>Netscape 4.0</li>
+            <li>Monitor de tubo</li>
+            <li>Luz apagada</li>
+            <li>Esperança ligada</li>
+          </ul>
+        </div>
+      </aside>
+
+      <aside class="sidebar sidebar--right" aria-label="Extras e conversa fiada">
+        <div class="box topfive" aria-labelledby="top-title">
+          <h2 class="box__title" id="top-title">TOP 5 DA SEMANA</h2>
+          <ol>
+            <li><span class="topfive__rank">1</span> Contar os R de “morango”</li>
+            <li><span class="topfive__rank">2</span> Prompt que trabalha por você</li>
+            <li><span class="topfive__rank">3</span> Desculpa para comprar GPU</li>
+            <li><span class="topfive__rank">4</span> Curso de IA do vizinho</li>
+            <li><span class="topfive__rank">5</span> Artigo de 40 páginas não lido</li>
+          </ol>
+          <p class="topfive__note">Ranking atualizado a cada 15 minutos (mentira).</p>
+        </div>
+
+        <div class="box chat" aria-labelledby="chat-title">
+          <h2 class="box__title" id="chat-title">CHAT DO PORTAL</h2>
+          <p class="chat__meta">sala #ia-mania • 4 pessoas (3 bots)</p>
+          <div class="chat__log">
+            <p><span>&lt;Zé_Webmaster&gt;</span> alguém aí?</p>
+            <p><span>&lt;GPT_Bot_2000&gt;</span> Olá! Posso ajudar com qualquer coisa, exceto o que você precisa.</p>
+            <p><span>&lt;Tia_Marlene&gt;</span> menino, seu site tá com um negócio piscando</p>
+            <p><span>&lt;Zé_Webmaster&gt;</span> é proposital</p>
+            <p class="chat__system">*** Tia_Marlene saiu ***</p>
+          </div>
+        </div>
+
+        <div class="box status" aria-labelledby="status-title">
+          <h2 class="box__title" id="status-title">STATUS DO SERVIDOR</h2>
+          <p class="status__line"><span class="status__dot" aria-hidden="true"></span> NO AR (graças ao ventilador)</p>
+          <p class="status__line">UPTIME: 3 dias <span>(caiu na terça)</span></p>
+          <p class="status__line">TEMP. DO PROCESSADOR: <strong>91 °C</strong></p>
+        </div>
+
+        <div class="box translator" aria-labelledby="trad-title">
+          <h2 class="box__title" id="trad-title">TRADUTOR DE IA</h2>
+          <dl>
+            <dt>revolucionário</dt><dd>ainda não testado</dd>
+            <dt>escala</dt><dd>dois clientes</dd>
+            <dt>seguro por design</dt><dd>ninguém olhou o código</dd>
+            <dt>AGI em 2 anos</dt><dd>pedido de aporte</dd>
+          </dl>
+        </div>
+      </aside>
+    </div>
+
+    <footer class="footer" id="creditos">
+      <div class="footer__rainbow" aria-hidden="true"></div>
+      <div class="footer__grid">
+        <div>
+          <p class="footer__logo">IA-MANIA 2000</p>
+          <p>Uma homepage feita à mão, com tabelas, teimosia e saudade do modem. Publicada em 1998, atualizada quando dá.</p>
+        </div>
+        <nav class="footer__nav" aria-label="Navegação do rodapé">
+          <a href="#sobre">Sobre</a>
+          <a href="#galeria">Memes</a>
+          <a href="#faq">FAQ</a>
+          <a href="#livro">Livro de visitas</a>
+          <a href="#topo">Voltar ao topo ↑</a>
+        </nav>
+        <div>
+          <p><strong>ACESSIBILIDADE:</strong> navegação por teclado, foco visível, textos alternativos, contraste alto e um botão que para a bagunça. Se algo piscar demais, ligue o Modo sossego.</p>
+          <p><strong>LETRAS MIÚDAS:</strong> site satírico. Nenhuma empresa de IA foi consultada, ferida ou contratada. Marcas citadas pertencem aos seus donos e aparecem como paródia. GIFs: colagem original do acervo deste site.</p>
+        </div>
+      </div>
+
+      <div class="webring" aria-label="Anel de sites fictício">
+        <span class="webring__dead">← SITE ANTERIOR <em>(fora do ar)</em></span>
+        <button class="webring__random" type="button" data-random>🎲 SITE ALEATÓRIO</button>
+        <span class="webring__dead">PRÓXIMO SITE → <em>(também fora do ar)</em></span>
+      </div>
+
+      <p class="footer__legal">© 1998–2026 Zé Rodela. Todos os direitos reservados, inclusive os que eu não tenho. <span class="blink" aria-hidden="true">•</span> Melhor visualizado em qualquer coisa, menos na pressa. <span class="blink" aria-hidden="true">•</span></p>
+      <p class="footer__counter">CONTADOR DE VISITAS: <span>000042</span> — quebrado desde 2001, mas com dignidade.</p>
+    </footer>
+  </div>
+
+  <dialog class="lightbox" id="meme-dialog" aria-labelledby="lb-title">
+    <div class="lightbox__box">
+      <div class="lightbox__top">
+        <span class="lightbox__count" id="lb-count">01 / 30</span>
+        <button class="lightbox__close" id="lb-close" type="button" aria-label="Fechar imagem ampliada" autofocus>✕ FECHAR</button>
+      </div>
+      <div class="lightbox__frame">
+        <img id="lb-img" alt="" width="352" height="124" decoding="async">
+      </div>
+      <div class="lightbox__info">
+        <p class="lightbox__cat" id="lb-cat">HYPE</p>
+        <h2 id="lb-title">Meme</h2>
+        <p class="lightbox__orig" id="lb-orig"></p>
+        <div class="lightbox__actions">
+          <button type="button" data-lb-prev>← ANTERIOR</button>
+          <button type="button" data-lb-copy>COPIAR LINK</button>
+          <button type="button" data-lb-next>PRÓXIMO →</button>
+        </div>
+        <p class="lightbox__hint">Setas ← → navegam. ESC fecha. O link direto do meme fica na barra de endereço.</p>
+      </div>
+    </div>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+
+  <button class="totop" id="to-top" type="button" aria-label="Voltar ao topo da página" hidden>
+    <span aria-hidden="true">↑</span>
+    <span class="totop__label">TOPO</span>
+  </button>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
